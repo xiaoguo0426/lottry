@@ -15,7 +15,9 @@
 */
 require 'lottryItems.php';	//奖项配置
 
-
+//1.第2步筛选的是概率>0,奖项份数>0的奖项
+//2.如果奖项全部中完，则需要在第2步提示“新的一路奖品正在路上，敬请关注”
+//3.如果需要100%中奖，则需要把最小奖的份数设置最大即可
 function computeLottry($prize_arr)
 {
 	if (empty($prize_arr)) {
